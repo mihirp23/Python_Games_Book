@@ -1,8 +1,9 @@
 ## Mihir Patel
 ## 3/4/19
+## File : guess_the_number.py
+## Python3
 
 ## This is a Guess the Number Game from Chapter 3
-## Python3
 
 import random
 
