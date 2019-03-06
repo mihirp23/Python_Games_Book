@@ -8,48 +8,48 @@
 import random
 
 HANGMAN_PICS = ['''
-+---+
+ +---+
     |
     |
     |
     ===''', '''
-+---+
-O   |
-    |
-    |
-    ===''', '''
-+---+
-O   |
-|   |
-    |
-    ===''', '''
-+---+
- O  |
- |  |
-/   |
-    ===''', '''
-+---+
- O  |
-/|\ |
-    |
-    ===''', '''
-+---+
- O  |
-/|\ |
-/   |
-    ===''', '''
-+---+
- O  |
-/|\ |
-/ \ |
-    ===''']
+ +---+
+ O   |
+     |
+     |
+     ===''', '''
+ +---+
+ O   |
+ |   |
+     |
+     ===''', '''
+ +---+
+ O   |
+ |   |
+/    |
+     ===''', '''
+ +---+
+ O   |
+/|\  |
+     |
+     ===''', '''
+ +---+
+ O   |
+/|\  |
+/    |
+     ===''', '''
+ +---+
+ O   |
+/|\  |
+/ \  |
+     ===''']
 
-words = ['''ant baboon badger bat bear beaver camel cat clam cobra cougar
+words = '''ant baboon badger bat bear beaver camel cat clam cobra cougar
          coyote crow deer dog donkey duck eagle ferret fox frog goat goose hawk
          lion lizard llma mole monkey moose mouse mule newt otter owl panda
          parrot pigeon python rabbit ram rat raven rhino salmon seal shark sheep
          skunk sloth snake spider stork swan tiger toad trout turkey turtle
-         weasel whale wolf wombat zebra'''.split()]
+         weasel whale wolf wombat zebra'''.split()
 
 ##################################################################
 def getRandomWord(wordList):
@@ -115,7 +115,7 @@ missedLetters = ''
 correctLetters = ''
 secretWord = getRandomWord(words)
 gameIsDone = False
-
+print(secretWord)
 while True:
     displayBoard(missedLetters, correctLetters, secretWord)
 
@@ -155,8 +155,3 @@ while True:
             secretWord = getRandomWord(words)
         else:
             break
-    
-
-
-
-    
