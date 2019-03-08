@@ -11,3 +11,4 @@ of the Python Programming language.
 3. dragon_realm.py
 4. hangman.py
 5. tic_tac_toe.py
+6. bagels.py 
